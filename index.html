@@ -1,97 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--metadatos-->
+<html lang="es">
+  <head>
+    <!-- Metadatos -->
     <meta charset="utf-8">
-    <meta name="author" content="Nahuel Perez Monte">    
-    <meta name="description" content="Portafolio del papu">
-    <meta name="keywords" content="HTML, CSS, JavaScript, React">
-    <meta name="viewport" content="=width=device-width, initial-scale=1">
-    <!--boostrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!--CSS-->
-    <link href="style.css" rel="stylesheet">
-    <!--TITULO-->
-    <title>Portafolio de nahuu</title>
-    <!--favicon-->
+    <meta name="author" content="Nahuel Perez Monte">
+    <meta name="description" content="Portafolio personal de LSO">
+    <meta name="keywords" content="aprendiz de html y css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Titulo -->
+    <title>portafolio de nahu</title>
+    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="imagenes/Trollface.png">
-    <!--fonts-->
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Wendy+One&display=swap" rel="stylesheet">
-</head>
-<body>
-    <!--barra de navegacion-->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Barra de navegacion -->
     <nav class="navbar navbar-expand-md navbar-light">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbar-toggler">
-            <a class="navbar-brand" href="#"> 
-                <img src="imagenes/Trollface.png" width="50" alt="Logo de mi pagina web">
-            </a>
-            <ul class="navbar-nav d-flex justify-content-center align-item-center">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Sobre mi</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">projectos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">testimonios</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">contacto</a>
-              </li>
-            </ul>
-            
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-toggler">
+          <a class="navbar-brand" href="#">
+            <img src="imagenes/Trollface.png" width="50" alt="Logo de la página web">
+          </a>
+          <ul class="navbar-nav d-flex justify-content-center align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mí</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Seccion Hero -->
+    <section class="hero align-items-stretch">
+      <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+        <img class="hero-imagen-desarrollador rounded-circle" src="imagenes/fotodeperfil.png" alt="Foto de perfil">
+        <h1>hola, soy nahuu</h1>
+        <h2>Estudiante de la e.e.s.t.n1 de informatica</h2>
+      </div>
+      <div class="hero-inferior">
+        <img class="hero-inferior-imagen img-fluid" src="imagenes/computrans.png" alt="Monitor, laptop y logos de HTML, CSS, JavaScript y React.">
+      </div>
+    </section>
+
+    <!-- Sobre mi -->
+    <section id="sobre-mi" class="sobre-mi seccion-oscura">
+      <div class="contenedor">
+        <h2 class="seccion-titulo">Conoce a Nahuel</h2>
+        <p class="seccion-texto">soy un chico con pocos pastiempos interesado en la informatica, donde en los talleres de mi escuela intento aprender lo mas posible para un futuro.</p>
+      </div>
+    </section>
+
+    <!-- Experiencia -->
+    <section class="experiencia seccion-clara">
+      <div class="container text-center">
+        <div class="row">
+          <!-- Desarrollo Web -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">Desarrollo Web</p>
+            <p>aqui algunas lenguas que estoy aprendiendo a usar</p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">HTML</span>
+              <span class="badge text-bg-primary">CSS</span>
+              <span class="badge text-bg-primary">JavaScript</span>
+              <span class="badge text-bg-primary">React</span>
+            </div>
+          </div>
+          <!-- Estudiante -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">Estudiante</p>
+            <p>Estudiante de la tecnica n1 de informatica, tengo 16 años y vivo en Grand Bourg</p>
           </div>
         </div>
-      </nav>
+      </div>
+    </section>
+        
+    <!-- Proyectos -->
+        <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
+          <h2 class="seccion-titulo texto-negro">Mis proyectos recientes</h2>
+          <h3 class="seccion-descripcion">Estos son proyectos que hice en taller</h3>
+        </section>
+          
 
-      <!--seccion hero-->
-      <section class="hero align-item-stretch">
-        <div class="hero-principal">
-            <img class="hero-imagen-desarrollador"src="imagenes/payaso.jpg" alt="foto de nahu">
-            <h1>holaa, soy nahu</h1>
-            <h2>use la compu de bauti para hacer esto, gracias</h2>
-        </div>
-        <div class="hero-inferior">
-            <img class="hero-inferior-imagen img-fluid" src="imagenes/computrans.png" alt="monitor y teclado">
-        </div>
-      </section>
-      <!--sobre mi-->
-      <section class="sobre-mi seccion-oscura">
-        <div class="contenedor">
-          <h2 class="seccion-titulo">Conoce a Nahu</h2>
-          <p class="seccion-texto"> holaaaaa,soy nahu un estudiante de la tecnica n1 que esta aprendiendo informatica y ha utilar VSC</p>
-        </div>
-      </section>
 
-    <!--experiencia-->
-      <section class="experiencia seccion-clara">
-        <div class="container text-center">
-            <div class="row">
-            <!--desarollo web-->
-              <div class="col-12 col-md-4">
-               <p>Desarrollo web</p>
-                <p></p>
-              </div>
-              <!--articulos-->
-              <div class="col-12 col-md-4">
-                articulos
-              </div>
-              <!--Estudiante-->
-              <div class="col-12 col-md-4">
-                estudiante
+    <!-- Galeria de Proyectos -->
+    <div class="container text-center proyectos-contenedor">
+      <div class="row">
+        
+        </div>
+        <!-- Proyecto 1 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="imagenes/tortu.jpg" alt="Proyecto 1">
+            <div class="overlay">
+              <p>Proyecto 1</p>
+              <div class="iconos-contenedor">
+                <a href="https://github.com/Cerino008/PaginaDeViajes" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="https://cerino008.github.io/PaginaDeViajes/" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-laptop"></i>
+                  
+                </a>
+                
               </div>
             </div>
+            <p class="viaje-info">este es una pagina de viajes</p>
+          </div>
         </div>
-      </section>
 
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
+    <!-- Pie de pagina (footer) -->
+    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center"> 
+      <img class="footer-logo" src="imagenes/Trollface.png" alt="Logo del portafolio">
+      <p class="footer-texto text-center">aprendo 3 dias a la semana programacion<br></p>
+      <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+        <a href="https://www.instagram.com/qrspps/" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-instagram"></i>
+        </a>
+      </div>
+      <div class="derechos-de-autor">Creado por Nahu (2024) &#169;</div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
 </html>
